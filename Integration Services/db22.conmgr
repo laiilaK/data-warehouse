@@ -1,0 +1,12 @@
+﻿<?xml version="1.0"?>
+<DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:ObjectName="db22"
+  DTS:DTSID="{4142163A-EEF9-4145-B89E-10974829B5A8}"
+  DTS:CreationName="OLEDB">
+  <DTS:ObjectData>
+    <DTS:ConnectionManager
+      DTS:ConnectRetryCount="1"
+      DTS:ConnectRetryInterval="5"
+      DTS:ConnectionString="Data Source=localhost\MSSQLSERVER03;Initial Catalog=db22;Provider=MSOLEDBSQL.1;Integrated Security=SSPI;Auto Translate=False;Application Name=SSIS-Integration Services Project1-{4142163A-EEF9-4145-B89E-10974829B5A8}localhost\MSSQLSERVER03.WideWorldImporters;" />
+  </DTS:ObjectData>
+</DTS:ConnectionManager>

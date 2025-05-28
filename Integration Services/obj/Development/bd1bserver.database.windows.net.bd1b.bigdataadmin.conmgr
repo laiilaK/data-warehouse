@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:ObjectName="bd1bserver.database.windows.net.bd1b.bigdataadmin"
+  DTS:DTSID="{06BD6290-97ED-4928-A3C1-B859A18979C0}"
+  DTS:CreationName="OLEDB">
+  <DTS:ObjectData>
+    <DTS:ConnectionManager
+      DTS:ConnectRetryCount="1"
+      DTS:ConnectRetryInterval="5"
+      DTS:ConnectionString="Data Source=bd1bserver.database.windows.net;User ID=bigdataadmin;Initial Catalog=bd1b;Provider=SQLNCLI11.1;Persist Security Info=True;Auto Translate=False;Application Name=SSIS-Integration Services Project1-{06BD6290-97ED-4928-A3C1-B859A18979C0}bd1bserver.database.windows.net.bd1b.bigdataadmin;">
+      <DTS:Password
+        DTS:Name="Password"
+        Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAIcMozfmreES11NND4KCvqwAAAAACAAAAAAAQZgAAAAEAACAAAADsj7Mij4YiN0JXa5xbVVEFumrwHmln6183R7W8cttA0gAAAAAOgAAAAAIAACAAAADTHYhkE+VPw4HtOuyLmRavbbJnZPcKIVBCTU2EqksotYAAAADcv5nmxviKG0n7Ama0WUUWYRyZpvzNQRs2uQxvdWO9+wVUwp4N3zU+ky56orF6e1JiqM3BD1PjDSkDGJiaNW+3UN4BUzmE1Gl+w8IQ91PZKEULSPJHbmA1b0UgsFMIWVaeNiYAB6D7CGFKI5R0G8ry6hnbjBO5t003oinmMS7KqUAAAAAvE+J/yw2x7JFcajvCa6Scuiu9fuXuXryQwD7qLnh3H6QpiQCu5Y259zQX4dxoazKX9xzCzOhuwUM0K8L7xAbt</DTS:Password>
+    </DTS:ConnectionManager>
+  </DTS:ObjectData>
+</DTS:ConnectionManager>

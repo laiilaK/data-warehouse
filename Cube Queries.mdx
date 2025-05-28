@@ -1,0 +1,128 @@
+
+-- MDX Queries
+
+-- find out the quantity and profit sold ove rthe years
+SELECT 
+[Dim Date].[Time].[Year] on rows,
+{[Measures].[Quantity] , [Measures].[Profit]} on columns
+FROM [WideImportersCube]
+
+-- what are the top 3 selling categories sold over the years
+SELECT 
+[Dim Date].[Time].[Year] on rows,
+topcount([Dim Stock Item].[Supplier Category Name].members,4,[Measures].[Quantity]) on columns
+FROM [WideImportersCube]
+
+-- most frequent customer
+
+SELECT 
+  TopCount(
+    [Dim Customer].[Name].Members, 
+    5, 
+    [Measures].[Quantity]
+  ) ON ROWS,
+  {[Measures].[Quantity], [Measures].[Profit]} ON COLUMNS
+FROM [WideImportersCube]
+
+
+SELECT 
+  [Dim Special Deal].[Deal Description].Members ON ROWS,
+  [Measures].[Quantity] ON COLUMNS
+FROM [WideImportersCube]
+
+-- most profitable month of a specific year
+
+SELECT 
+  TopCount(
+    [Dim Date].[Time].[Month Number].Members,
+    1,
+    [Measures].[Profit]
+  ) ON ROWS,
+  {[Measures].[Profit]} ON COLUMNS
+FROM [WideImportersCube]
+where ([Dim Date].[Year].[2013])
+
+-- most profitable quarter of a specific year
+
+SELECT 
+  TopCount(
+    [Dim Date].[Time].[Year Quarter].Members,
+    1,
+    [Measures].[Profit]
+  ) ON ROWS,
+  {[Measures].[Profit]} ON COLUMNS
+FROM [WideImportersCube]
+where ([Dim Date].[Year].[2014])
+
+
+-- MDX Queries
+
+-- find out the quantity and profit sold ove the years
+SELECT 
+[Dim Date].[Time].[Year] on rows,
+{[Measures].[Quantity] , [Measures].[Profit]} on columns
+FROM [WideImportersCube]
+
+-- what are the top 3 selling categories sold over the years
+SELECT 
+[Dim Date].[Time].[Year] on rows,
+topcount([Dim Stock Item].[Supplier Category Name].members,4,[Measures].[Quantity]) on columns
+FROM [WideImportersCube]
+
+-- most frequent customer
+SELECT 
+  TopCount(
+    [Dim Customer].[Name].Members, 
+    5, 
+    [Measures].[Quantity]
+  ) ON ROWS,
+  {[Measures].[Quantity], [Measures].[Profit]} ON COLUMNS
+FROM [WideImportersCube]
+
+-- amount of special deals
+SELECT 
+  [Dim Special Deal].[Deal Description].Members ON ROWS,
+  [Measures].[Quantity] ON COLUMNS
+FROM [WideImportersCube]
+
+-- most profitable month of a specific year
+SELECT 
+  TopCount(
+    [Dim Date].[Time].[Month Number].Members,
+    1,
+    [Measures].[Profit]
+  ) ON ROWS,
+  {[Measures].[Profit]} ON COLUMNS
+FROM [WideImportersCube]
+where ([Dim Date].[Year].[2013])
+
+-- most profitable quarter of a specific year
+SELECT 
+  TopCount(
+    [Dim Date].[Time].[Year Quarter].Members,
+    1,
+    [Measures].[Profit]
+  ) ON ROWS,
+  {[Measures].[Profit]} ON COLUMNS
+FROM [WideImportersCube]
+where ([Dim Date].[Year].[2014])
+
+-- Total sales of each state 
+SELECT 
+  [Dim City].[Hierarchy].[State Province Name].Members on rows,
+  [Measures].[Profit] on columns
+FROM [WideImportersCube]
+
+-- Total Sales of each State over the years
+SELECT 
+  non empty [Dim City].[City Name].Members on rows,
+  non empty [Dim Date].[Time].[Year].Members on columns
+FROM [WideImportersCube]
+WHERE ([Measures].[Profit])
+
+-- Top 5 most profitable stock items
+SELECT 
+  TopCount([Dim Stock Item].[Name].Members, 5, [Measures].[Profit]) on rows,
+  [Measures].[Profit] on columns
+FROM [WideImportersCube]
+

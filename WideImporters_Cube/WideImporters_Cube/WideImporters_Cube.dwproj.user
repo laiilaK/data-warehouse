@@ -1,0 +1,39 @@
+<AnalysisServicesUserConfiguration xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0">
+  <Configurations>
+    <Configuration>
+      <Name>Development</Name>
+      <Options>
+        <UserIDs>
+          <ConfigurationSetting>
+            <Id>Bd1b</Id>
+            <Name>Bd1b</Name>
+            <Value xsi:type="xsd:string">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAATdbJeDkgGUKhszOyn3AGOAAAAAAKAAAAQgBkADEAYgAAABBmAAAAAQAAIAAAADUczCZZOpRzZ4PN24+sB/fYwTOc+582q4JlCYzvfJp1AAAAAA6AAAAAAgAAIAAAACB2y5t8IsryX1BND1cp32W6Ern87047672N1KfPkH4eIAAAALGR3dPd02r3XDmZlTq4OMfyAt3i1/oC2mKYLzqRb8EaQAAAAPAktRYBtq5ZaboDPbirPkp081w6BN9gnfT9PB9BAdmzP3yw4Cn2vbkPk0Pxju8s+BdPUHEEcwtHN40LTIfR5tk=</Value>
+          </ConfigurationSetting>
+          <ConfigurationSetting>
+            <Id>WideImportersDW</Id>
+            <Name>WideImportersDW</Name>
+            <Value xsi:type="xsd:string">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAATdbJeDkgGUKhszOyn3AGOAAAAAAgAAAAVwBpAGQAZQBJAG0AcABvAHIAdABlAHIAcwBEAFcAAAAQZgAAAAEAACAAAABLJMcaPSwi+QPxgtdRJxe4XT6FKwmR1rav/757z9S8oQAAAAAOgAAAAAIAACAAAAAUCYfc6bk5duNZ3kxwjWE8N00daGxlDdSbeblxtYdcqiAAAAB539qByrA4QLmnmMr6c2BM7A9qZwk4OcVj1RYDG0y6sEAAAAC8+hmfNnzATBTdrwqnCiTTWle9PykrK6fxCZyXDL/YyPKCVuJYTY7/qo8iFD7N3OOPzBLPqPWx/Iqz1N3scZG7</Value>
+          </ConfigurationSetting>
+        </UserIDs>
+        <UserPasswords>
+          <ConfigurationSetting>
+            <Id>Bd1b</Id>
+            <Name>Bd1b</Name>
+            <Value xsi:type="xsd:string">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAATdbJeDkgGUKhszOyn3AGOAAAAAAKAAAAQgBkADEAYgAAABBmAAAAAQAAIAAAAF4lbjqUeHyYWHJLFjb/o5DE+m4bQndF3xS9g9+3P+VVAAAAAA6AAAAAAgAAIAAAAAwjAQXLMEDNmz3jFmcsoqyRWZPWJERF5TdfI2IP9guQMAAAAP6CxLsoNPoOG8ow1WrOv+3Yxj17FIEWjkposiJDIBzNtGfslfcj3TUjvzT6BRZPQkAAAADmwBPqrN25TgKxjMo7wBLoiJJgh+i+rSEUafq7dfS8vSfuQsH3W7K01P9HN3c8hJdeMoKMyGRCuFf/iYMow30B</Value>
+          </ConfigurationSetting>
+          <ConfigurationSetting>
+            <Id>WideImportersDW</Id>
+            <Name>WideImportersDW</Name>
+            <Value xsi:type="xsd:string">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAATdbJeDkgGUKhszOyn3AGOAAAAAAgAAAAVwBpAGQAZQBJAG0AcABvAHIAdABlAHIAcwBEAFcAAAAQZgAAAAEAACAAAACfY0vvzPA25UNjXmV5hMsCtIh/fF4Jh08LpTFBMebpGQAAAAAOgAAAAAIAACAAAAAJtr0hJAKwRa0eG806DfZYeCUgBi/ZKhAwQiHzV75ezTAAAABKWpF3ML496SgYP68NwaUOgLCf0E9hTLfvb3+7cl55Vj1v1QilqxfVxJiMm6GDWd9AAAAAH7hkck+Ma8oaac0mhM1voOn3zh3px+c4ZdExhiw4fdA/zpGFWBkWF0z0Ega93wTuO7pMxxIvSqY2ZLvNZP4qQg==</Value>
+          </ConfigurationSetting>
+        </UserPasswords>
+        <TargetServer>localhost</TargetServer>
+        <TargetDatabase>WideImporters_Cube</TargetDatabase>
+        <StartObject>
+          <ObjectId></ObjectId>
+          <ObjectType>Current</ObjectType>
+        </StartObject>
+      </Options>
+    </Configuration>
+  </Configurations>
+</AnalysisServicesUserConfiguration>
